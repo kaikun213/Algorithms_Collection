@@ -9,19 +9,17 @@ def print_matrix(matrix):
     print("\n")
 
 # Solution: We calculate the matrix entries: d_ij^(k) = min{d_ij^(k-1), d_ik^(k-1)+d_kj^(k-1)}
+# Analysis: O(n^3) , Space needed only one matrix stored
 def floid_warshall(weight_matrix):
     n = len(weight_matrix)
-    d_matrix = weight_matrix    # k-1 matrix
-    d2_matrix = d_matrix        # k matrix
-    for i in range(0,n):
-        for j in range(0,n):
-            for k in range(0,n):    # Bottom-Up: Calculate matrix for all subsets of k=0..n
+    d_matrix = weight_matrix    # k-1 matrix -> k matrix
+    for k in range(0,n):    # Bottom-Up: Calculate matrix for all subsets of k=0..n
+        for i in range(0,n):
+            for j in range(0,n):
                 if (d_matrix[i][j] > d_matrix[i][k]+d_matrix[k][j]): # found new minimum
-                    min_k = d_matrix[i][k]+d_matrix[k][j]
-            d2_matrix[i][j] = min_k
-    d_matrix = d2_matrix    # newly calculated matrix
-    print_matrix(d2_matrix)
-    return d2_matrix
+                    d_matrix[i][j] = d_matrix[i][k]+d_matrix[k][j]
+        print_matrix(d_matrix)
+    return d_matrix
 
 w = [
 [0,8,10,sys.maxint,sys.maxint,3],
@@ -32,4 +30,4 @@ w = [
 [sys.maxint,2,sys.maxint,sys.maxint,1,0]
 ]
 
-all_pair_shortest_path_matrix(w)
+floid_warshall(w)

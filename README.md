@@ -23,7 +23,7 @@ Additional topics: Lower bound proof
 
 ### Search Trees (Data structure)
 - [ ] Binary search trees
-- [ ]AVL-trees
+- [ ] AVL-trees
 - [ ] 2-3 Trees(H1)
 - [ ] Binary search for k'th element(H1)
 - [ ] Heapify(T3)
