@@ -1,8 +1,8 @@
-print("test")
-mylist = [2,23,43,2,1,10,58]
-print ('[%s]' % ', '.join(map(str, mylist)))
-mylist = mergesort(mylist)
-print ('[%s]' % ', '.join(map(str, mylist)))
+#print("test")
+#mylist = [2,23,43,2,1,10,58]
+#print ('[%s]' % ', '.join(map(str, mylist)))
+#mylist = mergesort(mylist)
+#print ('[%s]' % ', '.join(map(str, mylist)))
 
 def mergesort(l):
     print('mergesort', l) # debug printout

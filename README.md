@@ -13,7 +13,7 @@ Sorted after topic and problem. Intended to be documented well for understanding
 * Additional material usually describes more theoretical topics covered * that can hardly be written in code.
 
 ### Sorting
-- [ ] Heapsort
+- [x] Heapsort (Priority Queue in heapify method)
 - [ ] Quitsort
 - [x] Mergesort
 - [ ] Radix sort
@@ -22,7 +22,7 @@ Sorted after topic and problem. Intended to be documented well for understanding
 Additional topics: Lower bound proof
 
 ### Search Trees (Data structure)
-- [ ] Binary search trees
+- [x] Binary search trees
 - [ ] AVL-trees
 - [ ] 2-3 Trees(H1)
 - [ ] Binary search for k'th element(H1)
@@ -43,7 +43,7 @@ Additional topics: Average construction cost of binary trees(H1)
 - [ ] Max continuous subarray problem
 - [ ] Polynomial multiplication
 - [ ] Deterministic selection
-- [ ] FFT & Polynomial multiplication
+- [~] FFT & Polynomial multiplication
 - [ ] Sketch of lines(H2)
 - [ ] Membership problem for monotone matrices(H2)
 - [ ] Min/Max item search(T3)
@@ -55,9 +55,9 @@ Additional topics: Average construction cost of binary trees(H1)
 Additional topics: Master Theorem
 
 ### Greedy algorithms
-- [ ] Scheduling
+- [x] Scheduling
 - [ ] Knapsack
-- [ ] Huffman encoding
+- [x] Huffman encoding
 - [ ] Unit length closed interval
 - [ ] Denominations Change Problem(T7)
 - [ ] Minimum Gas stations(T7)
@@ -99,6 +99,21 @@ Additional topics: Master Theorem
 - [x] Subset sum problem(T10)
 - [ ] 0-1 Knapsack problem(T10)
 - [ ] Restricted subset sum problem(T11)
+- [ ] Shuffle two strings keep left-right ordering (H4)
+- [ ] Stable marriage algorithm
+
+### Max flow & Applications
+- [ ] Furd-Fulkerson Algorithm
+- [ ] Baseball elimination problem
+- [ ] Edge Disjoint paths problem
+- [ ] Circulation with demands
+- [ ] Max. Bipartite matching (Feasible schedule, Balanced assignment, Constrained assignment)
+- [ ] Taxi reservation problem (T12)
+- [ ] Edmund Karp modification (T12)
 
 
-### Max flow
+### Hashing
+- [ ] Linear probing
+- [ ] Quadratic probing
+- [ ] Double Hashing
+- [ ] Universal Hashing
